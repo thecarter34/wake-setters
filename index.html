@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wake Setters Coffee & Ice Cream | Shell Lake, WI</title>
+  <meta name="description" content="Wake Setters Coffee & Ice Cream in Shell Lake, Wisconsin — artisan coffee,Chocolate Shoppe ice cream, fresh baked goods, and a cozy place to slow down. Open daily." />
+  <meta name="author" content="Wake Setters Coffee" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://wakesetters.com/" />
+
+  <meta name="theme-color" content="#C8933A" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Wake Setters" />
+
+  <meta name="geo.region" content="US-WI" />
+  <meta name="geo.placename" content="Shell Lake, WI" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wakesetters.com/" />
+  <meta property="og:title" content="Wake Setters Coffee & Ice Cream | Shell Lake, WI" />
+  <meta property="og:description" content="Artisan coffee, Chocolate Shoppe ice cream, fresh baked goods — Shell Lake's cozy place to slow down." />
+  <meta property="og:image" content="og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Wake Setters Coffee" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wake Setters Coffee & Ice Cream | Shell Lake, WI" />
+  <meta name="twitter:description" content="Artisan coffee, Chocolate Shoppe ice cream, fresh baked goods — Shell Lake's cozy place to slow down." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "@id": "https://wakesetters.com/#business",
+    "name": "Wake Setters Coffee & Ice Cream",
+    "description": "Artisan coffee, Chocolate Shoppe ice cream, and fresh baked goods in Shell Lake, Wisconsin.",
+    "url": "https://wakesetters.com",
+    "telephone": "(715) 731-0031",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "453 Highway 63 S.",
+      "addressLocality": "Shell Lake",
+      "addressRegion": "WI",
+      "postalCode": "54871",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.5464,
+      "longitude": -91.8914
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "15:00" }
+    ],
+    "priceRange": "$$",
+    "servesCuisine": "Coffee, Ice Cream, Cafe"
+  }
+  </script>
+
+  <style>
+    /* ================================
+       DESIGN TOKENS — Wake Setters
+    ================================ */
+    :root {
+      --accent:       #C8933A;
+      --accent-light: #E8B96A;
+      --accent-dark:  #A07020;
+      --accent-glow:  rgba(200, 147, 58, 0.15);
+
+      --bg-primary:   #1A0E08;
+      --bg-secondary: #231308;
+      --bg-card:      #2C1A0E;
+      --bg-dark:      #120A04;
+
+      --text-primary:   #FDF6EC;
+      --text-secondary: #C8A882;
+      --text-muted:     #8A6A4A;
+
+      --border-color: rgba(200, 147, 58, 0.2);
+
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Lato', Arial, sans-serif;
+
+      --section-padding: clamp(60px, 8vw, 100px) 20px;
+      --radius-sm:  6px;
+      --radius-md:  12px;
+      --radius-lg:  18px;
+      --radius-xl:  28px;
+    }
+
+    /* ================================
+       RESET & BASE
+    ================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      mix-blend-mode: overlay;
+      pointer-events: none; z-index: 9998;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--accent-dark); border-radius: 3px; }
+    ::selection { background: var(--accent); color: var(--bg-primary); }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    .reveal { opacity: 0; transform: translateY(28px); }
+    .reveal.visible { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    .navbar.scrolled { background: rgba(26, 14, 8, 0.97); backdrop-filter: blur(20px); }
+
+    /* ================================
+       NAVBAR
+    ================================ */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 14px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(26, 14, 8, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      transform: translateY(-100%);
+      transition: transform 0.4s ease, background 0.3s ease;
+    }
+    .navbar.visible { transform: translateY(0); }
+
+    .nav-logo { display: flex; align-items: center; gap: 10px; cursor: pointer; min-width: 0; }
+    .nav-logo img { height: 38px; width: auto; flex-shrink: 0; }
+    .nav-logo-text { font-family: var(--font-display); font-weight: 700; font-size: 1rem; letter-spacing: 0.04em; }
+    @media (max-width: 768px) { .nav-logo-text { display: none; } }
+
+    .nav-links { display: flex; gap: clamp(1.5rem, 3vw, 2.5rem); list-style: none; }
+    .nav-links a { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-actions { display: flex; align-items: center; gap: 16px; }
+    .nav-phone {
+      display: flex; align-items: center; gap: 6px;
+      font-family: var(--font-display); font-weight: 600; font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .nav-phone svg { color: var(--accent); flex-shrink: 0; }
+    .nav-phone:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--accent);
+      color: var(--bg-primary);
+      padding: 10px 22px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent-dark); transform: translateY(-2px); }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .hamburger span { width: 24px; height: 2px; background: var(--text-primary); border-radius: 2px; transition: all 0.3s; }
+
+    .mobile-menu { display: none; }
+
+    /* ================================
+       HERO
+    ================================ */
+    .hero {
+      min-height: 100vh; min-height: 100dvh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 80px 24px 60px;
+      position: relative; overflow: hidden;
+      background: var(--bg-dark);
+    }
+
+    /* Coffee bean background pattern */
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(200, 147, 58, 0.08) 0%, transparent 70%),
+        url('https://images.unsplash.com/photo-1447933601403-0c6688de417e?w=1600&q=80') center/cover no-repeat;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(200, 147, 58, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 147, 58, 0.06) 1px, transparent 1px);
+      background-size: 60px 60px;
+      animation: gridMove 30s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes gridMove {
+      from { transform: translate(0, 0); }
+      to { transform: translate(60px, 60px); }
+    }
+
+    .hero-glow {
+      position: absolute; width: 700px; height: 700px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(200, 147, 58, 0.12) 0%, transparent 65%);
+      top: 50%; left: 50%; transform: translate(-50%, -50%);
+      pointer-events: none; z-index: 1;
+    }
+
+    .hero-orb {
+      position: absolute; border-radius: 50%; pointer-events: none;
+    }
+    .hero-orb-1 {
+      width: 600px; height: 600px; top: 30%; left: 20%;
+      background: radial-gradient(circle, rgba(200, 147, 58, 0.08) 0%, transparent 65%);
+      animation: orbFloat 12s ease-in-out infinite alternate;
+    }
+    .hero-orb-2 {
+      width: 400px; height: 400px; bottom: 20%; right: 15%;
+      background: radial-gradient(circle, rgba(200, 147, 58, 0.05) 0%, transparent 65%);
+      animation: orbFloat 15s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes orbFloat {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-48%, -52%) scale(1.08); }
+      100% { transform: translate(-52%, -48%) scale(0.96); }
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: 900px; width: 100%; }
+
+    .hero-logo { margin-bottom: 24px; animation: logoIn 0.8s ease 0.2s both; }
+    .hero-logo img { max-width: 300px; width: 100%; height: auto; margin: 0 auto; display: block; }
+    @keyframes logoIn {
+      from { opacity: 0; transform: translateY(-16px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 8px 20px; border-radius: 100px;
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    }
+    .hero-badge svg { width: 14px; height: 14px; color: var(--accent); }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--text-primary); line-height: 1;
+      margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--accent); }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--text-secondary);
+      max-width: 560px; margin: 0 auto 40px; line-height: 1.7;
+    }
+
+    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent); color: var(--bg-primary);
+      padding: 16px 32px; border-radius: var(--radius-md);
+      font-size: 1rem; font-weight: 700;
+      transition: all 0.2s;
+    }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200, 147, 58, 0.3); }
+    .btn-primary svg { width: 18px; height: 18px; }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 2px solid var(--border-color); color: var(--text-primary);
+      padding: 14px 28px; border-radius: var(--radius-md);
+      font-size: 1rem; font-weight: 600;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .btn-outline svg { width: 18px; height: 18px; }
+
+    .hero-trust {
+      display: flex; align-items: center; justify-content: center; gap: 24px;
+      margin-top: 48px; flex-wrap: wrap;
+    }
+    .trust-item { display: flex; align-items: center; gap: 8px; color: var(--text-muted); font-size: 0.875rem; }
+    .trust-item svg { color: var(--accent); width: 18px; height: 18px; flex-shrink: 0; }
+    .trust-sep { width: 4px; height: 4px; border-radius: 50%; background: var(--border-color); }
+
+    .hero-scroll {
+      position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: var(--text-muted); font-size: 0.7rem; letter-spacing: 0.12em;
+      text-transform: uppercase; z-index: 4;
+    }
+    .hero-scroll svg { animation: bounceDown 2s ease infinite; }
+    @keyframes bounceDown {
+      0%, 100% { transform: translateY(0); opacity: 0.6; }
+      50% { transform: translateY(6px); opacity: 1; }
+    }
+
+    .hero-wave {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+      background: var(--bg-primary);
+      clip-path: ellipse(55% 100% at 50% 100%);
+      z-index: 2; pointer-events: none;
+    }
+
+    /* ================================
+       TRUST BAR
+    ================================ */
+    .trustbar {
+      background: var(--accent);
+      padding: 20px 24px;
+      display: flex; align-items: center; justify-content: center; gap: clamp(20px, 4vw, 40px);
+      flex-wrap: wrap;
+    }
+    .trustbar-item {
+      display: flex; align-items: center; gap: 8px; color: var(--bg-primary); font-size: 0.875rem; font-weight: 600;
+      opacity: 0; transform: translateY(12px);
+      animation: trustbarIn 0.5s ease forwards;
+    }
+    .trustbar-item:nth-of-type(1) { animation-delay: 0.1s; }
+    .trustbar-item:nth-of-type(2) { animation-delay: 0.2s; }
+    .trustbar-item:nth-of-type(3) { animation-delay: 0.3s; }
+    .trustbar-item:nth-of-type(4) { animation-delay: 0.4s; }
+    .trustbar-item:nth-of-type(5) { animation-delay: 0.5s; }
+    @keyframes trustbarIn {
+      to { opacity: 1; transform: none; }
+    }
+    .trustbar-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .trustbar-sep { width: 4px; height: 4px; border-radius: 50%; background: rgba(26, 14, 8, 0.35); }
+
+    /* ================================
+       SECTION HEADER
+    ================================ */
+    .section-header { text-align: center; max-width: 640px; margin: 0 auto 56px; }
+    .section-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase;
+      color: var(--text-primary); line-height: 0.95; margin-bottom: 16px;
+    }
+    .section-sub { font-size: 1.05rem; color: var(--text-secondary); line-height: 1.65; }
+
+    /* ================================
+       MENU SECTION
+    ================================ */
+    .menu-section { padding: var(--section-padding); background: var(--bg-primary); }
+
+    .menu-intro {
+      text-align: center; max-width: 600px; margin: 0 auto 48px;
+      font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .menu-column {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .menu-column-header {
+      padding: 20px 24px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .menu-column-header h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem; font-weight: 700;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .menu-column-header p {
+      font-size: 0.8rem; color: var(--text-muted);
+    }
+
+    .menu-items { padding: 8px 0; }
+    .menu-item {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 12px; padding: 10px 20px;
+      border-bottom: 1px solid rgba(200, 147, 58, 0.06);
+      transition: background 0.2s;
+    }
+    .menu-item:last-child { border-bottom: none; }
+    .menu-item:hover { background: rgba(200, 147, 58, 0.04); }
+    .menu-item-name { font-size: 0.9rem; font-weight: 600; line-height: 1.4; }
+    .menu-item-name .note {
+      display: block; font-size: 0.75rem; font-weight: 400;
+      color: var(--text-muted); margin-top: 2px;
+    }
+    .menu-item-price {
+      font-family: var(--font-display);
+      font-size: 0.85rem; font-weight: 700;
+      color: var(--accent); white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .menu-divider {
+      padding: 12px 20px;
+      background: rgba(200, 147, 58, 0.06);
+      border-top: 1px solid var(--border-color);
+    }
+    .menu-divider p {
+      font-size: 0.78rem; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    /* Ice cream callout */
+    .ice-cream-callout {
+      max-width: 700px; margin: 32px auto 0;
+      background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px 32px;
+      display: flex; align-items: center; gap: 20px;
+    }
+    .ice-cream-callout .ice-icon { font-size: 2.5rem; flex-shrink: 0; }
+    .ice-cream-callout h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem; font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .ice-cream-callout p { font-size: 0.9rem; color: var(--text-secondary); }
+
+    /* ================================
+       ABOUT
+    ================================ */
+    .about { padding: var(--section-padding); background: var(--bg-secondary); }
+    .about-container {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    .about-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent-glow); border: 1px solid var(--accent);
+      color: var(--accent); padding: 8px 18px; border-radius: 100px;
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .about-badge svg { width: 14px; height: 14px; }
+    .about h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .about p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 16px; }
+    .about-pillars { display: flex; flex-direction: column; gap: 24px; margin-top: 32px; }
+    .about-pillar { display: flex; gap: 16px; align-items: flex-start; }
+    .about-pillar-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-md);
+      background: var(--accent-glow); display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .about-pillar-icon svg { width: 22px; height: 22px; color: var(--accent); }
+    .about-pillar h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .about-pillar p { font-size: 0.9rem; color: var(--text-secondary); margin: 0; }
+    .about-image { position: relative; }
+    .about-image img {
+      border-radius: var(--radius-xl); width: 100%; height: auto;
+      aspect-ratio: 4/3; object-fit: cover;
+    }
+    .about-photo-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      padding: 40px 24px 20px;
+      border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+    }
+    .about-caption-name { display: block; font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: #fff; }
+    .about-caption-title { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+
+    /* ================================
+       VISIT / LOCATION
+    ================================ */
+    .visit { padding: var(--section-padding); background: var(--bg-primary); }
+    .visit-container {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: start;
+    }
+    .visit-info { display: flex; flex-direction: column; gap: 28px; }
+    .visit-info h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800; text-transform: uppercase; margin-bottom: 8px;
+    }
+    .visit-info > p { color: var(--text-secondary); font-size: 1rem; line-height: 1.7; }
+    .visit-detail { display: flex; gap: 14px; align-items: flex-start; }
+    .visit-detail svg { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+    .visit-detail h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .visit-detail p { font-size: 0.9rem; color: var(--text-secondary); }
+
+    .visit-social { display: flex; gap: 12px; margin-top: 8px; flex-wrap: wrap; }
+    .social-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      padding: 10px 18px; border-radius: var(--radius-md);
+      font-size: 0.85rem; font-weight: 600;
+      transition: all 0.2s;
+    }
+    .social-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .social-link svg { width: 16px; height: 16px; }
+
+    .visit-map {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .visit-map iframe {
+      width: 100%; height: 100%; border: none;
+      filter: saturate(0.8) contrast(1.1);
+    }
+
+    /* ================================
+       FOOTER
+    ================================ */
+    .site-footer { background: var(--bg-dark); padding: 60px 24px 24px; }
+    .footer-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+    .footer-brand p {
+      font-size: 0.9rem; color: var(--text-muted);
+      margin-top: 12px; line-height: 1.65;
+    }
+    .footer-brand img { height: 40px; }
+    .footer-links h4, .footer-contact h4 {
+      font-family: var(--font-display); font-size: 0.9rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 16px; color: var(--text-primary);
+    }
+    .footer-links ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: 0.9rem; color: var(--text-muted); transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-contact p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px; }
+    .footer-contact a { color: var(--text-secondary); }
+    .footer-bottom {
+      max-width: 1100px; margin: 40px auto 0;
+      padding-top: 24px; border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .footer-bottom p { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* ================================
+       RESPONSIVE
+    ================================ */
+    @media (max-width: 900px) {
+      .menu-grid { grid-template-columns: 1fr; max-width: 560px; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .mobile-menu {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: var(--bg-dark); z-index: 999;
+        display: none; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+      }
+      .mobile-menu.open { display: flex; }
+      .mobile-menu a { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; text-transform: uppercase; }
+      .about-container, .visit-container, .footer-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
+      .nav-phone { display: none; }
+      .nav-actions { gap: 12px; }
+      .about-image { order: -1; }
+      .visit-map { aspect-ratio: 16/9; }
+    }
+
+    @media (max-width: 480px) {
+      .navbar { padding: 12px 16px; }
+      .nav-cta { padding: 8px 16px; font-size: 0.75rem; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+      .trustbar { gap: 12px; font-size: 0.8rem; padding: 16px 12px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .services, .about, .visit, .menu-section { padding-top: 48px; padding-bottom: 48px; }
+      .section-header { margin-bottom: 36px; }
+      .hero-wave { display: none; }
+      .hero-scroll { bottom: 20px; }
+      .ice-cream-callout { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo">
+      <img src="logo.jpg" alt="Wake Setters" />
+      <span class="nav-logo-text">Wake Setters</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:7157310031" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.0 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (715) 731-0031
+      </a>
+      <a href="#visit" class="nav-cta">Find Us</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#menu">Menu</a>
+    <a href="#about">Our Story</a>
+    <a href="#visit">Visit</a>
+    <a href="tel:7157310031" class="btn-primary" style="margin-top: 20px;">(715) 731-0031</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img src="logo.jpg" alt="Wake Setters Coffee & Ice Cream" loading="eager" />
+      </div>
+
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Shell Lake, Wisconsin
+      </div>
+
+      <h1>Coffee, Ice Cream<br>& <span>A Place to Slow Down</span></h1>
+      <p class="hero-sub">Artisan coffee, Chocolate Shoppe ice cream, and fresh baked goods — served with small-town warmth in the heart of Shell Lake.</p>
+
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v4H3zM3 9h18v4H3zM3 15h18v4H3z"/></svg>
+          View Our Menu
+        </a>
+        <a href="#visit" class="btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Find Us
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Est. 2024
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Open Daily
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          Community First
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll Down</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+
+    <div class="hero-wave" aria-hidden="true"></div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trustbar" aria-label="What we're known for">
+    <div class="trustbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+      Artisan Coffee
+    </div>
+    <div class="trustbar-sep"></div>
+    <div class="trustbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 00-5 5v8a5 5 0 0010 0V7a5 5 0 00-5-5z"/></svg>
+      Ice Cream
+    </div>
+    <div class="trustbar-sep"></div>
+    <div class="trustbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+      Baked Goods
+    </div>
+    <div class="trustbar-sep"></div>
+    <div class="trustbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Shell Lake, WI
+    </div>
+    <div class="trustbar-sep"></div>
+    <div class="trustbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      Est. 2024
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+    <header class="section-header">
+      <p class="section-label">Our Menu</p>
+      <h2 class="section-title" id="menu-heading">Coffee & Drinks</h2>
+      <p class="section-sub">Freshly made drinks in 16oz and 20oz sizes. Cold drinks available on request.</p>
+    </header>
+
+    <div class="menu-grid">
+
+      <!-- HOT DRINKS -->
+      <div class="menu-column reveal">
+        <div class="menu-column-header" style="background: rgba(200,147,58,0.08);">
+          <h3>Hot Drinks</h3>
+          <p>16oz / 20oz</p>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <span class="menu-item-name">Americano<span class="note"></span></span>
+            <span class="menu-item-price">$3.00 / $3.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Breve<span class="note"></span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Café Au Lait<span class="note"></span></span>
+            <span class="menu-item-price">$3.50 / $4.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Café Miel<span class="note"></span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Cappuccino<span class="note"></span></span>
+            <span class="menu-item-price">$4.00 / $4.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Caramel Macchiato<span class="note"></span></span>
+            <span class="menu-item-price">$4.50 / $5.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Chai Tea Latte<span class="note">*</span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Cortado<span class="note"></span></span>
+            <span class="menu-item-price">$3.50 / $4.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Espresso<span class="note">*</span></span>
+            <span class="menu-item-price">$2.50 / $3.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Flat White<span class="note"></span></span>
+            <span class="menu-item-price">$4.50 / $5.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Hot Chocolate<span class="note">*</span></span>
+            <span class="menu-item-price">$4.50 / $5.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Just Coffee<span class="note"></span></span>
+            <span class="menu-item-price">$2.50 / $3.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Latte<span class="note">*</span></span>
+            <span class="menu-item-price">$5.00 / $5.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Matcha Latte<span class="note">*</span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Mocha<span class="note">*</span></span>
+            <span class="menu-item-price">$5.00 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Turtle Mocha<span class="note">*</span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">White Chocolate Mocha<span class="note">*</span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">London Fog<span class="note"></span></span>
+            <span class="menu-item-price">$5.00 / $5.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Steamer<span class="note"></span></span>
+            <span class="menu-item-price">$3.50 / $4.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Tea / Tea Latte<span class="note">*</span></span>
+            <span class="menu-item-price">$3.00–$5.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Red Eye<span class="note"></span></span>
+            <span class="menu-item-price">$4.50 / $5.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Con Panna<span class="note"></span></span>
+            <span class="menu-item-price">$3.00 / $3.50</span>
+          </div>
+        </div>
+        <div class="menu-divider">
+          <p>* Can be made into a cold drink</p>
+        </div>
+      </div>
+
+      <!-- COLD DRINKS -->
+      <div class="menu-column reveal reveal-delay-1">
+        <div class="menu-column-header" style="background: rgba(200,147,58,0.08);">
+          <h3>Cold Drinks</h3>
+          <p>16oz / 20oz</p>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <span class="menu-item-name">Cold Brew<span class="note"></span></span>
+            <span class="menu-item-price">$4.00 / $4.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Iced Americano<span class="note"></span></span>
+            <span class="menu-item-price">$3.00 / $3.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Iced Latte<span class="note">*</span></span>
+            <span class="menu-item-price">$5.00 / $5.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Iced Matcha<span class="note">*</span></span>
+            <span class="menu-item-price">$5.00 / $5.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Iced Mocha<span class="note">*</span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Iced Chai<span class="note">*</span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Iced Tea<span class="note"></span></span>
+            <span class="menu-item-price">$3.50 / $4.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Lemonade<span class="note"></span></span>
+            <span class="menu-item-price">$3.00 / $3.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Lemonade Refresher<span class="note"></span></span>
+            <span class="menu-item-price">$5.00 / $5.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Italian Soda<span class="note"></span></span>
+            <span class="menu-item-price">$4.00 / $4.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Bottled Pop<span class="note"></span></span>
+            <span class="menu-item-price">$3.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Water<span class="note"></span></span>
+            <span class="menu-item-price">$2.00</span>
+          </div>
+        </div>
+        <div class="menu-divider">
+          <p>Add Espresso Shot — +$1.50</p>
+        </div>
+      </div>
+
+      <!-- FROZEN DRINKS -->
+      <div class="menu-column reveal reveal-delay-2">
+        <div class="menu-column-header" style="background: rgba(200,147,58,0.08);">
+          <h3>Frozen & Blended</h3>
+          <p>16oz / 20oz</p>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <span class="menu-item-name">Blended Chai<span class="note"></span></span>
+            <span class="menu-item-price">$6.00 / $6.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Frappuccino<span class="note"></span></span>
+            <span class="menu-item-price">$5.50 / $6.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Frozen Hot Chocolate<span class="note"></span></span>
+            <span class="menu-item-price">$6.00 / $6.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Malt<span class="note"></span></span>
+            <span class="menu-item-price">$6.75 / $7.25</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Milkshake<span class="note"></span></span>
+            <span class="menu-item-price">$6.50 / $7.00</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Root Beer Float<span class="note"></span></span>
+            <span class="menu-item-price">$6.00 / $6.50</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-item-name">Smoothie<span class="note"></span></span>
+            <span class="menu-item-price">$6.00 / $6.50</span>
+          </div>
+        </div>
+        <div class="menu-divider">
+          <p>Milks: Oat +$1 · Almond +$1 · Half & Half +$1</p>
+        </div>
+        <div class="menu-divider">
+          <p>Flavors +$0.70: Vanilla, Hazelnut, Caramel, Chocolate, Butterscotch, English Toffee, Lavender, Peppermint, Raspberry, Toasted Marshmallow</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream Callout -->
+    <div class="ice-cream-callout reveal">
+      <div class="ice-icon">🍦</div>
+      <div>
+        <h4>Also Serving Chocolate Shoppe Ice Cream</h4>
+        <p>Celebrated since 1962. Ask about our sundaes, cones, and seasonal specials.</p>
+      </div>
+    </div>
+
+    <!-- Baked Goods -->
+    <div style="max-width: 700px; margin: 24px auto 0; text-align: center;">
+      <p class="section-label" style="margin-bottom: 12px;">Also On The Menu</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 12px 20px;">
+          <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.95rem;">Muffins</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Chocolate Chip · Lemon Poppyseed · Blueberry</div>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 12px 20px;">
+          <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.95rem;">Scones</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">Raspberry Orange · Blueberry Dark Chocolate</div>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 12px 20px;">
+          <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.95rem;">Cookies</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">S'mores Cookie & More</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about-container">
+      <div class="about-content reveal">
+        <div class="about-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Est. 2024
+        </div>
+        <h2 id="about-heading">Our Story</h2>
+        <p>Wake Setters opened in 2024 in the heart of Shell Lake, Wisconsin — born from a love of good coffee, local community, and a simple belief: everyone deserves a place to slow down.</p>
+        <p>Run by the same folks behind Lakeview Bar & Grill, we've brought that same hospitality to the coffee counter. Whether you're grabbing your morning espresso, meeting a friend for ice cream, or just need a quiet corner to yourself — our door's open.</p>
+        <p>We source quality ingredients, serve Bear Lake Coffee, and make everything from scratch when we can. Swing by and see what's brewing.</p>
+
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <div class="about-pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <h3>Community First</h3>
+              <p>From rodeo fans to morning regulars — we built this place for Shell Lake.</p>
+            </div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+            </div>
+            <div>
+              <h3>Quality Coffee</h3>
+              <p>Bear Lake Coffee — roasted with purpose, brewed with care.</p>
+            </div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 00-5 5v8a5 5 0 0010 0V7a5 5 0 00-5-5z"/></svg>
+            </div>
+            <div>
+              <h3>Ice Cream Since '62</h3>
+              <p>Chocolate Shoppe — Wisconsin's favorite, served with a smile.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1554118811-823e1ff0b565?w=700&q=80" alt="Interior of Wake Setters coffee shop with rustic brick wall and warm lighting" loading="lazy" width="450" height="338" />
+        <figcaption class="about-photo-caption">
+          <span class="about-caption-name">Wake Setters Coffee & Ice Cream</span>
+          <span class="about-caption-title">453 Highway 63 S., Shell Lake, WI</span>
+        </figcaption>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit" aria-labelledby="visit-heading">
+    <div class="visit-container">
+      <div class="visit-info reveal">
+        <h2 id="visit-heading">Come On In</h2>
+        <p>Located right on Highway 63 in Shell Lake — easy to find, hard to leave. Park up front and we'll have something warm waiting.</p>
+
+        <div class="visit-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <h3>Location</h3>
+            <p>453 Highway 63 S.<br>Shell Lake, WI 54871</p>
+          </div>
+        </div>
+
+        <div class="visit-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div>
+            <h3>Hours</h3>
+            <p>Mon–Fri: 7:00 AM – 6:00 PM<br>Saturday: 8:00 AM – 6:00 PM<br>Sunday: 8:00 AM – 3:00 PM</p>
+          </div>
+        </div>
+
+        <div class="visit-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.0 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <div>
+            <h3>Phone</h3>
+            <p><a href="tel:7157310031" style="color: var(--accent); font-weight: 600;">(715) 731-0031</a></p>
+          </div>
+        </div>
+
+        <div class="visit-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:hello@wakesetters.com" style="color: var(--text-secondary);">hello@wakesetters.com</a></p>
+          </div>
+        </div>
+
+        <div class="visit-social">
+          <a href="https://www.facebook.com/WakeSetters" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            @WakeSetters
+          </a>
+          <a href="https://www.instagram.com/WakeSetterscoffee" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            @WakeSetterscoffee
+          </a>
+        </div>
+      </div>
+
+      <div class="visit-map reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.7!2d-91.8914!3d45.5464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b02!2sShell+Lake%2C+WI!5e0!3m2!1sen!2sus!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Wake Setters location map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Wake Setters" />
+        <p>Artisan coffee, Chocolate Shoppe ice cream, and fresh baked goods in the heart of Shell Lake, Wisconsin. Open daily — come slow down with us.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:7157310031">(715) 731-0031</a></p>
+        <p>453 Highway 63 S.<br>Shell Lake, WI 54871</p>
+        <p style="margin-top: 12px;">
+          <a href="https://www.facebook.com/WakeSetters" target="_blank" rel="noopener" style="color: var(--text-muted); font-size: 0.85rem;">Facebook</a>
+          &nbsp;·&nbsp;
+          <a href="https://www.instagram.com/WakeSetterscoffee" target="_blank" rel="noopener" style="color: var(--text-muted); font-size: 0.85rem;">Instagram</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Wake Setters Coffee & Ice Cream. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 50) {
+        navbar.classList.add('visible', 'scrolled');
+      } else {
+        navbar.classList.remove('visible', 'scrolled');
+      }
+      lastScroll = currentScroll;
+    });
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
