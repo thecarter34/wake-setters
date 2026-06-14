@@ -658,6 +658,11 @@
       .hero-wave { display: none; }
       .hero-scroll { bottom: 20px; }
       .ice-cream-callout { flex-direction: column; text-align: center; }
+      .menu-pills { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+
+    @media (max-width: 540px) {
+      .menu-pills { grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
     }
   </style>
 </head>
@@ -789,34 +794,26 @@
     </header>
 
     <!-- Category pills -->
-    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px;">
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px 28px; text-align: center; min-width: 140px;">
-        <div style="margin-bottom: 8px;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent);"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
-        </div>
+    <div class="menu-pills" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 48px;">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Hot Drinks</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Lattes, Cappuccinos &amp; More</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted);">Lattes, Cappuccinos &amp; More</div>
       </div>
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px 28px; text-align: center; min-width: 140px;">
-        <div style="margin-bottom: 8px;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent);"><path d="M8 2h8l2 5H6l2-5z"/><path d="M6 7v10a4 4 0 004 4h4a4 4 0 004-4V7"/><line x1="6" y1="7" x2="6" y2="9"/><line x1="18" y1="7" x2="18" y2="9"/><line x1="10" y1="2" x2="14" y2="2"/></svg>
-        </div>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M8 2h8l2 5H6l2-5z"/><path d="M6 7v10a4 4 0 004 4h4a4 4 0 004-4V7"/><line x1="6" y1="7" x2="6" y2="9"/><line x1="18" y1="7" x2="18" y2="9"/><line x1="10" y1="2" x2="14" y2="2"/></svg>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Cold Drinks</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Cold Brew, Iced Lattes &amp; More</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted);">Cold Brew, Iced Lattes &amp; More</div>
       </div>
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px 28px; text-align: center; min-width: 140px;">
-        <div style="margin-bottom: 8px;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent);"><path d="M12 2a5 5 0 00-5 5v2H6a2 2 0 000 4h12a2 2 0 000-4h-1V7a5 5 0 00-5-5z"/><path d="M6 13v5a4 4 0 004 4h4a4 4 0 004-4v-5"/></svg>
-        </div>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M12 2a5 5 0 00-5 5v2H6a2 2 0 000 4h12a2 2 0 000-4h-1V7a5 5 0 00-5-5z"/><path d="M6 13v5a4 4 0 004 4h4a4 4 0 004-4v-5"/></svg>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Ice Cream</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Chocolate Shoppe Since 1962</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted);">Chocolate Shoppe Since 1962</div>
       </div>
-      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px 28px; text-align: center; min-width: 140px;">
-        <div style="margin-bottom: 8px;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent);"><path d="M12 3c-1.26 0-2.36.58-3.11 1.53C8.04 5.64 7 7.54 7 9.79c0 1.78.73 2.39 1.5 3.18.68.7 1.5 1.54 1.5 2.78v.25h2v-.25c0-1.24.82-2.08 1.5-2.78.77-.79 1.5-1.4 1.5-3.18 0-2.25-1.04-4.15-2.89-5.26A4.003 4.003 0 0012 3z"/><path d="M8.5 19v1a.5.5 0 00.5.5h6a.5.5 0 00.5-.5v-1"/></svg>
-        </div>
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M12 3c-1.26 0-2.36.58-3.11 1.53C8.04 5.64 7 7.54 7 9.79c0 1.78.73 2.39 1.5 3.18.68.7 1.5 1.54 1.5 2.78v.25h2v-.25c0-1.24.82-2.08 1.5-2.78.77-.79 1.5-1.4 1.5-3.18 0-2.25-1.04-4.15-2.89-5.26A4.003 4.003 0 0012 3z"/><path d="M8.5 19v1a.5.5 0 00.5.5h6a.5.5 0 00.5-.5v-1"/></svg>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Baked Goods</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Muffins, Scones &amp; Cookies</div>
+        <div style="font-size: 0.75rem; color: var(--text-muted);">Muffins, Scones &amp; Cookies</div>
       </div>
     </div>
 
