@@ -33,6 +33,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -314,7 +315,7 @@
       display: flex; align-items: center; justify-content: center; gap: 24px;
       margin-top: 48px; flex-wrap: wrap;
     }
-    .trust-item { display: flex; align-items: center; gap: 8px; color: var(--text-muted); font-size: 0.875rem; }
+    .trust-item { display: flex; align-items: center; gap: 8px; color: var(--text-muted); font-size: 0.875rem; line-height: 1; }
     .trust-item svg { color: var(--accent); width: 18px; height: 18px; flex-shrink: 0; }
     .trust-sep { width: 4px; height: 4px; border-radius: 50%; background: var(--border-color); }
 
@@ -722,28 +723,28 @@
 
       <div class="hero-actions">
         <a href="menu.html" class="btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v4H3zM3 9h18v4H3zM3 15h18v4H3z"/></svg>
+          <i class="ph ph-list"></i>
           View Our Menu
         </a>
         <a href="#visit" class="btn-outline">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <i class="ph ph-map-pin"></i>
           Find Us
         </a>
       </div>
 
       <div class="hero-trust">
         <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <i class="ph ph-star" style="font-size:14px"></i>
           Est. 2024
         </div>
         <div class="trust-sep"></div>
         <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <i class="ph ph-clock"></i>
           Open Daily
         </div>
         <div class="trust-sep"></div>
         <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          <i class="ph ph-users-three"></i>
           Community First
         </div>
       </div>
@@ -751,7 +752,7 @@
 
     <div class="hero-scroll" aria-hidden="true">
       <span>Scroll Down</span>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      <i class="ph ph-caret-down" style="font-size:20px"></i>
     </div>
 
     <div class="hero-wave" aria-hidden="true"></div>
@@ -760,27 +761,27 @@
   <!-- TRUST BAR -->
   <section class="trustbar" aria-label="What we're known for">
     <div class="trustbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+      <i class="ph ph-coffee" style="font-size:18px"></i>
       Artisan Coffee
     </div>
     <div class="trustbar-sep"></div>
     <div class="trustbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14c3 0 6-2 6-5s-3-5-6-5-6 2-6 5 3 5 6 5z"/><path d="M6 15h12l-1 5H7l-1-5z"/></svg>
+      <i class="ph ph-ice-cream" style="font-size:18px"></i>
       Ice Cream
     </div>
     <div class="trustbar-sep"></div>
     <div class="trustbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8c0-2.2-1.8-4-4-4H10C7.8 4 6 5.8 6 8v1H5c-1.1 0-2 .9-2 2v1c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-1c0-1.1-.9-2-2-2h-1V8z"/><path d="M8 8V6c0-.6.4-1 1-1h6c.6 0 1 .4 1 1v2"/></svg>
+      <i class="ph ph-cookie" style="font-size:18px"></i>
       Baked Goods
     </div>
     <div class="trustbar-sep"></div>
     <div class="trustbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <i class="ph ph-map-pin" style="font-size:18px"></i>
       Shell Lake, WI
     </div>
     <div class="trustbar-sep"></div>
     <div class="trustbar-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      <i class="ph ph-users-three" style="font-size:18px"></i>
       Locally Owned
     </div>
   </section>
@@ -796,22 +797,22 @@
     <!-- Category pills -->
     <div class="menu-pills" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 48px;">
       <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+        <i class="ph ph-coffee" style="font-size:28px; color: var(--accent); flex-shrink: 0;"></i>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Hot Drinks</div>
         <div style="font-size: 0.75rem; color: var(--text-muted);">Lattes, Cappuccinos &amp; More</div>
       </div>
       <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M8 2h8l2 5H6l2-5z"/><path d="M6 7v10a4 4 0 004 4h4a4 4 0 004-4V7"/><line x1="6" y1="7" x2="6" y2="9"/><line x1="18" y1="7" x2="18" y2="9"/><line x1="10" y1="2" x2="14" y2="2"/></svg>
+        <i class="ph ph-snowflake" style="font-size:28px; color: var(--accent); flex-shrink: 0;"></i>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Cold Drinks</div>
         <div style="font-size: 0.75rem; color: var(--text-muted);">Cold Brew, Iced Lattes &amp; More</div>
       </div>
       <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M12 14c3 0 6-2 6-5s-3-5-6-5-6 2-6 5 3 5 6 5z"/><path d="M6 15h12l-1 5H7l-1-5z"/></svg>
+        <i class="ph ph-ice-cream" style="font-size:28px; color: var(--accent); flex-shrink: 0;"></i>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Ice Cream</div>
         <div style="font-size: 0.75rem; color: var(--text-muted);">Chocolate Shoppe Since 1962</div>
       </div>
       <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 20px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color: var(--accent); flex-shrink: 0;"><path d="M18 8c0-2.2-1.8-4-4-4H10C7.8 4 6 5.8 6 8v1H5c-1.1 0-2 .9-2 2v1c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-1c0-1.1-.9-2-2-2h-1V8z"/><path d="M8 8V6c0-.6.4-1 1-1h6c.6 0 1 .4 1 1v2"/></svg>
+        <i class="ph ph-cookie" style="font-size:28px; color: var(--accent); flex-shrink: 0;"></i>
         <div style="font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;">Baked Goods</div>
         <div style="font-size: 0.75rem; color: var(--text-muted);">Muffins, Scones &amp; Cookies</div>
       </div>
@@ -819,7 +820,7 @@
 
     <div style="text-align: center; margin-top: 48px;">
       <a href="menu.html" class="btn-primary">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v4H3zM3 9h18v4H3zM3 15h18v4H3z"/></svg>
+        <i class="ph ph-list"></i>
         View Full Menu
       </a>
     </div>
@@ -830,7 +831,7 @@
     <div class="about-container">
       <div class="about-content reveal">
         <div class="about-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <i class="ph ph-star" style="font-size:14px"></i>
           Est. 2024
         </div>
         <h2 id="about-heading">Our Story</h2>
@@ -841,7 +842,7 @@
         <div class="about-pillars">
           <div class="about-pillar">
             <div class="about-pillar-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              <i class="ph ph-users-three"></i>
             </div>
             <div>
               <h3>Community First</h3>
@@ -850,7 +851,7 @@
           </div>
           <div class="about-pillar">
             <div class="about-pillar-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+              <i class="ph ph-coffee"></i>
             </div>
             <div>
               <h3>Quality Coffee</h3>
@@ -859,7 +860,7 @@
           </div>
           <div class="about-pillar">
             <div class="about-pillar-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14c3 0 6-2 6-5s-3-5-6-5-6 2-6 5 3 5 6 5z"/><path d="M6 15h12l-1 5H7l-1-5z"/></svg>
+              <i class="ph ph-ice-cream"></i>
             </div>
             <div>
               <h3>Ice Cream Since '62</h3>
@@ -886,7 +887,7 @@
         <p>Located right on Highway 63 in Shell Lake — easy to find, hard to leave. Park up front and we'll have something warm waiting.</p>
 
         <div class="visit-detail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <i class="ph ph-map-pin"></i>
           <div>
             <h3>Location</h3>
             <p>453 Highway 63 S.<br>Shell Lake, WI 54871</p>
@@ -894,7 +895,7 @@
         </div>
 
         <div class="visit-detail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <i class="ph ph-clock"></i>
           <div>
             <h3>Hours</h3>
             <p>Mon–Fri: 7:00 AM – 6:00 PM<br>Saturday: 8:00 AM – 6:00 PM<br>Sunday: 8:00 AM – 3:00 PM</p>
@@ -902,7 +903,7 @@
         </div>
 
         <div class="visit-detail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.0 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <i class="ph ph-phone"></i>
           <div>
             <h3>Phone</h3>
             <p><a href="tel:7157310031" style="color: var(--accent); font-weight: 600;">(715) 731-0031</a></p>
@@ -910,7 +911,7 @@
         </div>
 
         <div class="visit-detail">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <i class="ph ph-envelope"></i>
           <div>
             <h3>Email</h3>
             <p><a href="mailto:hello@wakesetters.com" style="color: var(--text-secondary);">hello@wakesetters.com</a></p>
@@ -919,11 +920,11 @@
 
         <div class="visit-social">
           <a href="https://www.facebook.com/WakeSetters" target="_blank" rel="noopener" class="social-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <i class="ph ph-facebook-logo" style="font-size:18px"></i>
             @WakeSetters
           </a>
           <a href="https://www.instagram.com/WakeSetterscoffee" target="_blank" rel="noopener" class="social-link">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <i class="ph ph-instagram-logo" style="font-size:18px"></i>
             @WakeSetterscoffee
           </a>
         </div>
