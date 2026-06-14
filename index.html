@@ -645,7 +645,16 @@
       .services, .about, .visit, .menu-section { padding-top: 48px; padding-bottom: 48px; }
       .section-header { margin-bottom: 36px; }
       .hero-wave { display: none; }
-      .hero-scroll { bottom: 20px; }
+      .hero-scroll {
+        position: static;
+        transform: none;
+        margin-top: 32px;
+        flex-direction: row;
+        gap: 8px;
+      }
+      .hero-trust { gap: 16px; }
+      .hero-trust .trust-item { font-size: 0.75rem; }
+      .hero-trust .trust-sep { display: none; }
       .ice-cream-callout { flex-direction: column; text-align: center; }
       .menu-pills { grid-template-columns: repeat(2, 1fr) !important; }
     }
