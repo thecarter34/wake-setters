@@ -208,9 +208,8 @@
     .hero-bg {
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(200, 147, 58, 0.08) 0%, transparent 70%),
-        url('https://images.unsplash.com/photo-1447933601403-0c6688de417e?w=1600&q=80') center/cover no-repeat;
-      opacity: 0.35;
+        linear-gradient(to bottom, rgba(18, 10, 4, 0.5) 0%, rgba(18, 10, 4, 0.7) 100%),
+        url('hero-exterior.jpg') center/cover no-repeat;
       pointer-events: none;
     }
 
@@ -468,6 +467,39 @@
     }
     .ice-cream-callout p { font-size: 0.9rem; color: var(--text-secondary); }
 
+    /* Chalkboard accent images */
+    .menu-chalkboard {
+      max-width: 700px; margin: 32px auto 0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    }
+    .menu-chalkboard img { width: 100%; height: auto; display: block; }
+
+    /* Espresso quality section */
+    .quality-section {
+      max-width: 900px; margin: 48px auto 0;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    }
+    .quality-image img {
+      border-radius: var(--radius-lg);
+      width: 100%; height: auto;
+      aspect-ratio: 4/3; object-fit: cover;
+    }
+    .quality-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 800; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .quality-text p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 12px; }
+
     /* ================================
        ABOUT
     ================================ */
@@ -593,6 +625,7 @@
     ================================ */
     @media (max-width: 900px) {
       .menu-grid { grid-template-columns: 1fr; max-width: 560px; }
+      .quality-section { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 768px) {
@@ -973,6 +1006,31 @@
       </div>
     </div>
 
+    <!-- Drink Menu Accent -->
+    <div class="menu-chalkboard reveal">
+      <img src="drinks-chalkboard.jpg" alt="Hand-lettered Wake Setters drink menu chalkboard" loading="lazy" />
+    </div>
+
+    <!-- Espresso Quality Section -->
+    <div class="quality-section reveal">
+      <div class="quality-image">
+        <img src="espresso-machine.jpg" alt="Nuova Simonelli espresso machine at Wake Setters" loading="lazy" />
+      </div>
+      <div class="quality-text">
+        <div class="about-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+          Our Craft
+        </div>
+        <h2>Every Shot Pulled to Perfection</h2>
+        <p>From the first sip to the last, we take our coffee seriously. Bear Lake Coffee, Nuova Simonelli espresso, and a team that cares about every cup.</p>
+        <p>Swing by and taste the difference.</p>
+        <a href="#visit" class="btn-primary" style="margin-top: 20px; display: inline-flex;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Come See Us
+        </a>
+      </div>
+    </div>
+
     <!-- Baked Goods -->
     <div style="max-width: 700px; margin: 24px auto 0; text-align: center;">
       <p class="section-label" style="margin-bottom: 12px;">Also On The Menu</p>
@@ -990,6 +1048,11 @@
           <div style="font-size: 0.8rem; color: var(--text-muted);">S'mores Cookie & More</div>
         </div>
       </div>
+    </div>
+
+    <!-- Baked Goods Chalkboard -->
+    <div class="menu-chalkboard reveal" style="margin-top: 32px;">
+      <img src="baked-goods-chalkboard.jpg" alt="Wake Setters fresh baked goods — muffins, scones, cookies" loading="lazy" />
     </div>
   </section>
 
@@ -1037,7 +1100,7 @@
         </div>
       </div>
       <div class="about-image reveal">
-        <img src="https://images.unsplash.com/photo-1554118811-823e1ff0b565?w=700&q=80" alt="Interior of Wake Setters coffee shop with rustic brick wall and warm lighting" loading="lazy" width="450" height="338" />
+        <img src="shop-interior.jpg" alt="Interior of Wake Setters coffee shop — exposed brick, wooden beams, and cozy seating" loading="lazy" width="450" height="338" />
         <figcaption class="about-photo-caption">
           <span class="about-caption-name">Wake Setters Coffee & Ice Cream</span>
           <span class="about-caption-title">453 Highway 63 S., Shell Lake, WI</span>
